@@ -1,0 +1,45 @@
+<!--Data Binding Interpolation-->
+{{ 2 + 3 * 10 }}
+<!--expression -->
+<br />
+{{ headerTitle }}
+<!-- Data send from model-->
+<br />
+{{ 'Welcome to angular' + headerTitle }}
+<!--String Concat-->
+<br />
+
+<!--Built in propert and fun in js-->
+{{ headerTitle.length }}
+<br />
+{{ headerTitle.toUpperCase() }}
+<br />
+
+<!--Call Method from Model-->
+{{ logmsg() }}
+
+<!-- what we cannot do with interpolation -->
+<!-- {a=2+6}  assign operator -->
+<!-- windows.location.href cannot use global variable in dom -->
+
+<!-- property binding-->
+
+<input type="text" [id]="HeaderId" />
+
+<!--class binding-->
+<div class="text-success">This is success</div>
+
+<!--Renderd based on condition-->
+<div [class.text-danger]="hasError">Hello world</div>
+
+<!-- ngclass-->
+<h1 [ngClass]="setofClasses">Welcome to ITI</h1>
+
+<!--style binding inline style-->
+<h1 [style.color]="'red'">This is style Binding</h1>
+
+<!--conditional inline style-->
+<h1 [style.color]="hasError ? 'red' : 'green'"></h1>
+
+<!--ng style-->
+<h1 [ngStyle]="setofstyles">style binding</h1>

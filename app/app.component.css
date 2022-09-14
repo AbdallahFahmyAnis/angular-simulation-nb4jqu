@@ -1,0 +1,12 @@
+p {
+  font-family: Lato;
+}
+.text-success {
+  color: green;
+}
+.text-danger {
+  color: red;
+}
+.type-special {
+  font-style: italic;
+}
